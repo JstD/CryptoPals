@@ -1,11 +1,10 @@
 from singleXOR import get_english_score
-
 lst = []
 with open('c4.txt','r') as f:
     counter = 0
     for line in f:
         try:
-            counter = 1
+            counter += 1
             h = line[:-1]
             string = bytes.fromhex(h)
             for c in range(256):
